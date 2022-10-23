@@ -84,6 +84,10 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
+            sudo docker compose stop
+            sudo docker compose rm backend
+            sudo docker compose rm frontend
+
             sudo rm -f .env        
             sudo touch .env
             sudo chmod 666 .env
@@ -95,11 +99,7 @@ jobs:
             echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
             echo DB_HOST=${{ secrets.DB_HOST }} >> .env
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
-            
-            sudo docker compose stop
-            sudo docker compose rm backend
-            sudo docker compose rm frontend
-            
+
             sudo docker compose up -d --build
 
   send_message:
