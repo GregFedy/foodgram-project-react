@@ -10,9 +10,7 @@ services:
       - ./.env
 
   backend:
-    build:
-      context: ../backend
-      dockerfile: ../backend/Dockerfile
+    image: fursy/foodgram-backend:v1.0
     container_name: backend
     restart: always
     volumes:
