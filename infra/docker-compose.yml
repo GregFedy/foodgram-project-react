@@ -10,7 +10,7 @@ services:
       - ./.env
 
   backend:
-    image: fursy/foodgram-backend:v1.0
+    image: fursy/foodgram-backend:latest
     container_name: backend
     restart: always
     volumes:
@@ -23,7 +23,7 @@ services:
       - ./.env
 
   frontend:
-    image: fursy/foodgram-frontend:v1.1
+    image: fursy/foodgram-frontend:latest
     container_name: frontend
     volumes:
       - ../frontend/:/app/result_build/
