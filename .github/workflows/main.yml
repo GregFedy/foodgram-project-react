@@ -29,9 +29,8 @@ jobs:
         cd backend/
         # установка зависимостей
         pip install -r requirements.txt
-        cd ..
 
     - name: Test with flake8
       run: |
         # запуск проверки проекта по flake8
-        python -m flake8
+        python -m flake8 backend
