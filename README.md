@@ -6,6 +6,10 @@ Foodgram, «Продуктовый помощник». Онлайн-сервис
 походом в магазин скачивать сводный список продуктов, необходимых 
 для приготовления одного или нескольких выбранных блюд.
 
+Проект доступен по адресу [gregfedy.sytes.net](http://gregfedy.sytes.net/)<br>
+Документация к API доступна по адресу [gregfedy.sytes.net/api/docs/](http://gregfedy.sytes.net/api/docs/)<br>
+Админ-зона доступна по адресу [gregfedy.sytes.net/admin/](http://gregfedy.sytes.net/admin/)<br>
+
 ### Функционал API:
 #### AUTH
 - Получение **JWT-токена** в обмен на **password** и **email**
@@ -49,10 +53,6 @@ Foodgram, «Продуктовый помощник». Онлайн-сервис
 придёт token (JWT-токен).
 3. При желании можно отправить POST-запрос на эндпоинт `/api/auth/token/logout/`
 для удаления JWT-токена.
-
-Документация к API доступна по адресу `http://localhost/api/docs/`
-после запуска контейнеров.
-Админ-зона доступна по адресу `http://localhost/admin/`
 
 ## Установка
 ### Шаг 1. Установка Docker
@@ -149,3 +149,4 @@ docker system prune
 ![](https://img.shields.io/badge/Python-3.7.0-blue?style=flat&logo=python&logoColor=white)
 ![](https://img.shields.io/badge/Django-3.2.16-green?style=flat&logo=django&logoColor=white)
 ![](https://img.shields.io/badge/PostgreSQL-13.0-orange?style=flat&logo=postgresql&logoColor=white)
+![workflow](https://github.com/GregFedy/foodgram-project-react/actions/workflows/main.yml/badge.svg)
