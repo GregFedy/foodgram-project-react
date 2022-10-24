@@ -222,11 +222,11 @@ class RecipeWriteSerializer(ModelSerializer):
             raise ValidationError({
                 'tags': 'Нужно выбрать хотя бы один тег!'
             })
-        for tag_id in tags:
-            if not Tag.objects.filter(id=tag_id).exists():
-                raise ValidationError(
-                    f'Тег с id = {tag_id} не существует'
-                )
+        for tag in tags:
+            if tag not in Tag.objects.all():
+                raise ValidationError({
+                    'tags': 'Тег не найден!'
+                })
         tags_set = set(tags)
         if len(tags) != len(tags_set):
             raise ValidationError({
