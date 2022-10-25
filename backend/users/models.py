@@ -1,4 +1,5 @@
 from django.contrib.auth.models import AbstractUser
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.db.models import UniqueConstraint, Q, F, CheckConstraint
 
@@ -40,6 +41,10 @@ class Follow(models.Model):
         verbose_name='Автор',
         on_delete=models.CASCADE,
     )
+
+    def clean(self):
+        if self.user == self.author:
+            raise ValidationError('Вы не можете подписаться на самого себя.')
 
     class Meta:
         ordering = ('-id',)
