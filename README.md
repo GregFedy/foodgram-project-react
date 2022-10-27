@@ -149,4 +149,4 @@ docker system prune
 ![](https://img.shields.io/badge/Python-3.7.0-blue?style=flat&logo=python&logoColor=white)
 ![](https://img.shields.io/badge/Django-3.2.16-green?style=flat&logo=django&logoColor=white)
 ![](https://img.shields.io/badge/PostgreSQL-13.0-orange?style=flat&logo=postgresql&logoColor=white)
-![workflow](https://github.com/GregFedy/foodgram-project-react/actions/workflows/main.yml/badge.svg)
+[![workflow](https://github.com/GregFedy/foodgram-project-react/actions/workflows/main.yml/badge.svg)](https://github.com/GregFedy/foodgram-project-react/actions/workflows/main.yml)
