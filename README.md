@@ -146,7 +146,7 @@ docker system prune
 
 - [Григорий Федоренко](https://github.com/GregFedy)
 
-![](https://img.shields.io/badge/Python-3.7.0-blue?style=flat&logo=python&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3.7.0-blue?style=flat&logo=python&logoColor=white)](https://www.python.org/downloads/release/python-370/)
 ![](https://img.shields.io/badge/Django-3.2.16-green?style=flat&logo=django&logoColor=white)
 ![](https://img.shields.io/badge/PostgreSQL-13.0-orange?style=flat&logo=postgresql&logoColor=white)
 [![workflow](https://github.com/GregFedy/foodgram-project-react/actions/workflows/main.yml/badge.svg)](https://github.com/GregFedy/foodgram-project-react/actions/workflows/main.yml)
